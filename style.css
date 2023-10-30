@@ -126,7 +126,8 @@ main {
     header {
         background: none;
         justify-content: flex-start;
-        padding-inline: 7rem;
+        margin:2.75rem 10rem 7rem;
+        height: fit-content;
     }
 
     header img {
@@ -134,7 +135,9 @@ main {
     }
 
     main {
-        padding-inline: 10rem;
+        margin-inline: 10rem;
+        max-width: 24rem;
+        padding: 0;
     }
 
     div.conteudo {
