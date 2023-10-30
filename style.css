@@ -11,7 +11,7 @@
     --gray-400: #94a3b8;
     --gray-200: #e2e8fd;
     --purple: #7c3aed;
-    --white:#fff;
+    --white: #fff;
 }
 
 header {
@@ -72,13 +72,13 @@ main {
     border-radius: 0.25rem;
 }
 
-.login input::placeholder{
+.login input::placeholder {
     color: var(--gray-400);
 }
 
 .login input:hover,
-.login input:focus{
-outline: 1px solid var(--purple);
+.login input:focus {
+    outline: 1px solid var(--purple);
 }
 
 .login a {
@@ -88,11 +88,15 @@ outline: 1px solid var(--purple);
     font-weight: 600;
 }
 
+.bg-desktop {
+    display: none;
+}
+
 .login a:hover {
     text-decoration: underline;
 }
 
-.login button{
+.login button {
     margin-top: 1rem;
     margin-bottom: 2rem;
     padding-block: 1rem;
@@ -105,7 +109,7 @@ outline: 1px solid var(--purple);
     color: var(--white);
 }
 
-.login>p{
+.login p {
     color: var(--gray-600);
 }
 
@@ -114,16 +118,31 @@ outline: 1px solid var(--purple);
     font-size: 1rem;
 }
 
-@media(min-width:100px){
-    header{
+@media(min-width:1000px) {
+    body{
+        display: flex;
+    }
+
+    header {
         background: none;
         justify-content: flex-start;
         padding-inline: 7rem;
     }
-    header img{
+
+    header img {
         width: 10rem;
     }
-    main{
-        padding-inline: 7rem;
+
+    main {
+        padding-inline: 10rem;
+    }
+
+    div.conteudo {
+        width: 100%;
+    }
+
+    .bg-desktop {
+        display: inline-block;
+        width: 100%;
     }
 }
