@@ -8,6 +8,7 @@
 :root {
     --gray-800: #1E2938;
     --gray-600: #475569;
+    --purple:   #7c3aed;
 }
 
 header {
@@ -21,7 +22,7 @@ header {
     margin-bottom: 3.7rem;
 }
 
-.descricao{
+.descricao {
     margin-bottom: 2.5rem;
 }
 
@@ -36,8 +37,36 @@ main {
     font-size: 1.5625rem;
 }
 
-.descricao p { 
+.descricao p {
     font-size: 0.8125rem;
     color: var(--gray-600);
-    
+
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login label {
+    font-size: 0.875rem;
+    color: var(--gray-800);
+    font-weight: 600;
+}
+
+.login a {
+    color: var(--purple);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.login a:hover{
+    text-decoration:underline;
 }
