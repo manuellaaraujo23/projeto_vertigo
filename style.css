@@ -1,31 +1,43 @@
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Titillium Web', sans-serif;
 }
 
-:root{
-   --gray-800:#1E2938;
-   --gray-600:#475569;
+:root {
+    --gray-800: #1E2938;
+    --gray-600: #475569;
 }
 
- header{
+header {
     background-image: url(./imagens/img.png);
-    background-size:cover;
+    background-size: cover;
     height: 8.375rem;
 
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 3.7rem;
- }
- main{
+}
+
+.descricao{
+    margin-bottom: 2.5rem;
+}
+
+
+main {
     padding-inline: 1.5rem;
- }
- 
- .descricao h1 {
+}
+
+.descricao h1 {
     color: var(--gray-800);
     margin-bottom: 1rem;
     font-size: 1.5625rem;
+}
+
+.descricao p { 
+    font-size: 0.8125rem;
+    color: var(--gray-600);
+    
 }
